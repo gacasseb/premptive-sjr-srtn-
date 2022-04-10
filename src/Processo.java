@@ -22,7 +22,6 @@ public class Processo extends Thread{
 	public void run() {
 		tempoRestante--;
 		if ( tempoRestante == 0 ) {
-			System.out.println("Processo concluído dentro da thread! tempo atual: " + tempoAtual);
 			finishTime = tempoAtual;
 			turnAround = finishTime - tempoInicio;
 		}
